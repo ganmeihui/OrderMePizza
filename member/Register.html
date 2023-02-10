@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Member Registration</title>		
+
+        <link rel="stylesheet" href="../Style/style1.css">
+        <script src="https://kit.fontawesome.com/289e32f898.js" crossorigin="anonymous"></script> 
+        <script src="formvalidation.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <center><img src="../images/Logo1.png" width="170px"></center>
+            <h2>MEMBER ACCOUNT REGISTRATION</h2>
+            <form method="post" action="../member/register.php" class="form-details" id="form" onsubmit="return validateForm();">
+                <!--fullname-->
+                <div class="fullname">
+                    <div class="form">
+                        <label>Full Name </label> <img src="https://img.icons8.com/fluency-systems-regular/24/000000/name.png"/>
+                        <div class="vl">
+                            <input type="text" id="fullname" name="fullname" placeholder="Enter your fullname" autocomplete="off">
+                        </div>  
+                        <div class="msg">
+                            <i class="fas sucess">&#xf058;</i> <!--fa-check-circle-->
+                            <i class="fas error">&#xf06a;</i> <!--fa-exclamation-circle-->
+                            <small class="message">error message</small>
+                        </div> 
+                    </div>  
+                </div>
+
+                <!--email-->
+                <div class="email">
+                    <div class="form">
+                        <label>Email Address </label> <img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/20/000000/external-email-seo-dreamstale-lineal-dreamstale.png"/>
+                        <div class="vl">
+                            <input type="text" id="email" name="email" placeholder="abc@123mail.com" autocomplete="off">
+                        </div>  
+                        <div class="msg">
+                            <i class="fas sucess">&#xf058;</i> <!--fa-check-circle-->
+                            <i class="fas error">&#xf06a;</i> <!--fa-exclamation-circle-->
+                            <small class="message">error message</small>
+                        </div> 
+                    </div>      
+                </div>
+
+                <!--mobile number-->
+                <div class="mobile">
+                    <div class="form">
+                        <label>Mobile Number </label> <img src="https://img.icons8.com/material/22/000000/android--v1.png"/>              
+                        <div class="vl">
+                            <select name="code" required>
+                                <option value="">Code</option>
+                                <option value="Malaysia +60">+60</option> 
+                            </select>
+                            <input type="phone" id="mobile" name="mobile" placeholder="xx-xxxxxxxx"  autocomplete="off">
+                        </div>
+                        <div class="msg">
+                            <i class="fas sucess">&#xf058;</i> <!--fa-check-circle-->
+                            <i class="fas error">&#xf06a;</i> <!--fa-exclamation-circle-->
+                            <small class="message">error message</small>
+                        </div> 
+                    </div>
+                </div>
+
+                <!--password-->
+                <div class="password">
+                    <div class="form">
+                        <label>Password </label> <img src="https://img.icons8.com/small/22/000000/password.png"/>
+                        <div class="vl">
+                            <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="off">                         
+                        </div>
+                        <div class="msg">
+                            <i class="fas sucess">&#xf058;</i> <!--fa-check-circle-->
+                            <i class="fas error">&#xf06a;</i> <!--fa-exclamation-circle-->
+                            <small class="message">error message</small>
+                        </div> 
+                    </div>
+                </div>
+
+                <!--confirm password-->
+                <div class="confirmPassword">
+                    <div class="form">
+                        <label>Confirm Password </label> <img src="https://img.icons8.com/small/22/000000/password.png"/>
+                        <div class="vl">
+                            <input type="password" id="password2" name="password2" placeholder="Re-enter your password" autocomplete="off">                           
+                        </div> 
+                        <div class="msg">
+                            <i class="fas sucess">&#xf058;</i> <!--fa-check-circle-->
+                            <i class="fas error">&#xf06a;</i> <!--fa-exclamation-circle-->
+                            <small class="message">error message</small>
+                        </div> 
+                    </div>
+                </div>
+
+                <!--Gender-->
+                <div class="gender">
+                    <div class="form">
+                        <label>Gender </label> <img src="https://img.icons8.com/small/24/000000/transgender.png"/>
+                        <div class="gendercategory">
+                            <div class="vl">
+                                <input type="radio" id="male" name="gender" value="Male" /> Male </label>
+                                <input type="radio" id="female" name="gender" value="Female /"> Female</label> 
+                            </div>
+                        </div>
+                        <div class="msg">
+                            <i class="fas sucess">&#xf058;</i> <!--fa-check-circle-->
+                            <i class="fas error">&#xf06a;</i> <!--fa-exclamation-circle-->
+                            <small class="message">error message</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!--State-->
+                <div class="state">
+                    <div class="form">
+                        <label>State </label> <img src="https://img.icons8.com/small/22/000000/marker.png"/>
+                        <div class="vl">
+                            <select  id="state" name="state" >
+                                <option value="">--Select your state--</option>
+                                <option value="Kuala Lumpur">Kuala Lumpur</option>
+                                <option value="Putrajaya"> Putrajaya</option>
+                                <option value="Kedah">Kedah</option>
+                                <option value="Selangor">Selangor</option>
+                                <option value="Kelantan">Kelantan</option>
+                                <option value="Johor">Johor</option>
+                                <option value="Perak">Perak</option>
+                                <option value="Pahang"> Pahang</option>
+                                <option value="Terengganu">Terengganu</option>
+                                <option value="Perlis">Perlis</option>
+                                <option value="Negeri Sembilan">Negeri Sembilan</option>
+                                <option value="Penang">Penang</option>   
+                                <option value="Melaka"> Melaka</option>
+                                <option value="Labuan">Labuan</option>
+                                <option value="Sabah">Sabah</option>
+                                <option value="Sarawak">Sarawak</option>
+                            </select>
+                        </div> 
+                        <div class="msg">
+                            <i class="fas sucess">&#xf058;</i> <!--fa-check-circle-->
+                            <i class="fas error">&#xf06a;</i> <!--fa-exclamation-circle-->
+                            <small class="message">error message</small>
+                        </div> 
+                    </div>
+                </div>
+
+                <!--T&c-->
+                <br>
+                <h3>Terms and Conditions</h3>
+                <input type="checkbox" id="terms" required/>
+                I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.
+            
+                <!--register button-->
+                <button type="submit" name="submit" class="registerbtn"">REGISTER</button>             
+                
+                <h4>Already have an account ? <a href="../member/Login.html"> Login</a></h4>
+            </form>      
+        </div>
+    </body>
+</html>

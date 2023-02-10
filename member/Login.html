@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Member Login</title>		
+	
+        <link rel="stylesheet" href="../Style/style1.css">
+        <script src="https://kit.fontawesome.com/289e32f898.js" crossorigin="anonymous"></script> 
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="back">
+                <a href="../index.html">Back to Index Page</a>
+            </div>
+
+            <center><img src="../images/Logo1.png" width="170px"></center>
+            <h2>MEMBER LOGIN</h2>
+            <form method="post" action="login.php" class="form-details" id="form">
+                <!--email-->
+                <div class="email">
+                    <div class="form">
+                        <label>Email Address </label> <img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/20/000000/external-email-seo-dreamstale-lineal-dreamstale.png"/>
+                        <div class="vl">
+                            <input type="text" id="email" name="email" placeholder="abc@123mail.com" autocomplete="off">
+                        </div>  
+                        <div class="msg">
+                            <i class="fas sucess">&#xf058;</i> <!--fa-check-circle-->
+                            <i class="fas error">&#xf06a;</i> <!--fa-exclamation-circle-->
+                            <small class="message">error message</small>
+                        </div> 
+                    </div>      
+                </div>
+
+                <!--password-->
+                <div class="password">
+                    <div class="form">
+                        <label>Password </label> <img src="https://img.icons8.com/small/22/000000/password.png"/>
+                        <div class="vl">
+                            <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="off">                         
+                        </div>
+                        <div class="msg">
+                            <i class="fas sucess">&#xf058;</i> <!--fa-check-circle-->
+                            <i class="fas error">&#xf06a;</i> <!--fa-exclamation-circle-->
+                            <small class="message">error message</small>
+                        </div> 
+                    </div>
+                </div>
+
+                <!--register button-->
+                <button type="submit" name="submit" class="loginbtn"">LOGIN</button>             
+                
+                <h4>Don't have an account ? <a href="Register.html"> Create Account</a></h4>
+            </form>
+        </div>
+    </body>
+</html>
