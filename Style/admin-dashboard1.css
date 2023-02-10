@@ -1,0 +1,373 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-sarif;
+}
+
+body
+{
+	overflow-x: hidden;
+}
+
+.main
+{
+	position: absolute;
+	width: calc(100% - 300px);
+	left: 300px;
+	min-height: 100vh;
+	background: #f5f5f5;
+	transition: 0.5s;
+}
+
+.main .active
+{
+	width: calc(100% - 60px);
+	left: 60px;
+}
+
+.main .topbar
+{
+	width: 100%;
+	background: #fff;
+	height: 60px;
+	padding: 0 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.toggle
+{
+	position: relative;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+}
+
+.toggle::before
+{
+	content: '\f0c9';
+	font-family: fontAwesome;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	line-height: 60px;
+	font-size: 24px;
+	text-align: center;
+	color: #111;
+}
+
+.search
+{
+	position: relative;
+	width: 400px;
+	margin: 0 10px;
+}
+
+.search label
+{
+	position: relative;
+	width: 100%;
+}
+
+.search label input
+{
+	width: 100%;
+	height: 40px;
+	border-radius: 40px;
+	padding: 5px 20px;
+	padding-left: 35px;
+	outline: none;
+	border: 1px soid black;
+}
+
+.search label .fa
+{
+	position: absolute;
+	left: 15px;
+	top: 4px;
+}
+
+.user
+{
+	position: relative;
+	min-width: 50px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.user img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.cardBox
+{
+	position: relative;
+	width: 100%;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-gap: 20px;
+}
+
+.cardBox .card
+{
+	position: relative;
+	background: #fff;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.cardBox .card .numbers
+{
+	position: relative;
+	font-size: 2em;
+	font-weight: 500;
+}
+
+.cardBox .card .cardName
+{
+	color: #999;
+}
+
+.cardBox .card .iconBox
+{
+	font-size: 2.5em;
+	color: #03a9f4;
+}
+
+.cardBox .card .numbers a
+{
+	text-decoration: none;
+}
+
+.cardBox .card .numbers a:hover
+{
+	text-decoration: none;
+	color:tomato;
+}
+
+.details
+{
+	position: relative;
+	width: 100%;
+	padding: 20px;
+	padding-top: 0;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 2fr 1fr;
+}
+
+.details .recentOrders
+{
+	position: relative;
+	display: grid;
+	min-height: 530px;
+	background: #fff;
+	padding: 20px;
+}
+
+.cardHeader
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.cardHeader h2
+{
+	font-weight: 00;
+}
+
+.btn
+{
+	position: relative;
+	padding: 5px 10px;
+	background: #03a9f4;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 6px;
+}
+
+.details table
+{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.detail table thead td
+{
+	font-weight: 600;
+}
+
+.details .recentOrders table tr
+{
+	border-bottom: 1px solid rgba (0,0,0,0.1);
+}
+
+
+.detail .recentOrders table tbody tr:last-child
+{
+	border-bottom: none;
+}
+
+
+.detail .recentOrders table tbody tr:hover
+{
+	background: #03a9f4;
+	color: #fff;
+}
+
+.detail .recentOrders table tr td
+{
+	padding: 9px 5px;
+}
+
+.detail .recentOrders table tbody tr td:last-child,
+.detail .recentOrders table tbody tr td:last-child
+{
+	text-align: right;
+}
+
+.detail .recentOrders table tbody tr td:nth-child(2),
+.detail .recentOrders table tbody tr td:nth-child(2)
+{
+	text-align: right;
+	padding-right: 20px;
+}
+
+.detail .recentOrders table tbody tr td:nth-child(3),
+.detail .recentOrders table tbody tr td:nth-child(3)
+{
+	text-align: center;
+}
+
+.status
+{
+	position: relative;
+	padding: 2px 4px;
+	background: #f00;
+	color: #fff;
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.delivered
+{
+	background: #8de02c;
+}
+
+.pending
+{
+	background: #f9ca3f;
+}
+
+.return
+{
+	background: #f00;
+}
+
+.inprogress
+{
+	background: #1795ce;
+}
+
+.details .recentCustomers
+{
+	position: relative;
+	min-height: 530px;
+	background: #fff;
+	padding: 20px;
+}
+
+.details .recentCustomers .imgBx
+{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.details .recentCustomers .imgBx img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.details .recentCustomers table tr:hover
+{
+	background: #03a9f4;
+	color: #fff;
+}
+
+.details .recentCustomers  table tr td
+{
+	padding: 7px 10px;
+}
+
+.details .recentCustomers table tr td h4
+{
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.2em;
+}
+
+.details .recentCustomers table tr td h4 span
+{
+	font-size: 14px;
+	color: #999;
+}
+
+@media (max-width: 992px)
+{
+	.navigation
+	{
+		left: -300px;
+	}
+	.navigation .active
+	{
+		left: 0;
+		width: 300px;
+	}
+	.main
+	{
+		width: 100%;
+		left: 0;
+	}
+	.main .active
+	{
+		width: calc(100% - 300px);
+		left: 30px;
+	}
+	.cardBox
+	{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
+}
+
+	
+
+
+
+
+
